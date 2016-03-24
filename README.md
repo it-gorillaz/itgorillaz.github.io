@@ -11,6 +11,7 @@ This is the http://itgorillaz.com.br landing page repository.
 ## Abouts
 
 [Diogo Silva Ferreira](http://twitter.com/diogosilva)
+[Tom Melo](http://twitter.com/_tommelo)
 
 ## License
 
