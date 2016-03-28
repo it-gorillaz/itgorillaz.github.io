@@ -4,16 +4,16 @@
   "description": "ITGorillaz we develop some cool stuff",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "start": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/it-gorillaz/itgorillaz.com.br-landing.git"
+    "url": "git+https://github.com/it-gorillaz/itgorillaz.github.io.git"
   },
   "author": "ITGorillaz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/it-gorillaz/itgorillaz.com.br-landing/issues"
+    "url": "https://github.com/it-gorillaz/itgorillaz.github.io/issues"
   },
   "homepage": "http://www.itgorillaz.com.br",
   "devDependencies": {
