@@ -5,8 +5,9 @@ This is the http://itgorillaz.com.br landing page repository.
 ## Setup
 
 * Install Node.js: https://nodejs.org/en/download/
-* Then, you need to install all the dependencies `npm install`
-* If you wanna be able to use global commands `npm install -g gulp`
+* Install the dependencies `npm install`
+* Run `npm start`
+* Then open the browser: http://localhost:3000
 
 ## Abouts
 
