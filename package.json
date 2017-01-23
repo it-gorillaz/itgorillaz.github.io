@@ -4,7 +4,7 @@
   "description": "ITGorillaz we develop some cool stuff",
   "main": "index.js",
   "scripts": {
-     "start": "gulp"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,8 @@
     "gulp-uglify": "1.5.3",
     "imagemin-pngquant": "4.2.2",
     "nib": "1.1.0"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "3.0.0"
   }
 }

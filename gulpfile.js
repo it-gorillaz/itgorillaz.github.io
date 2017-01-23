@@ -11,6 +11,7 @@ var gulp = require('gulp')
   , stylus = require('gulp-stylus')
   , nib = require('nib')
   , header = require('gulp-header')
+  , htmlmin = require('gulp-htmlmin')
   , notify = require('gulp-notify');
 
 var config = {
@@ -24,13 +25,13 @@ var config = {
     ]
     , img: './src/assets/images/**/*'
     , fonts: './src/assets/fonts/**/*'
-    , dist: './www'
+    , dist: './'
   }
 }
 
 gulp.task('connect', () => {
   connect.server({
-    root: ['www'],
+    root: ['./'],
     port: config.port,
     base: config.devBaseUrl,
     livereload: true
@@ -38,12 +39,13 @@ gulp.task('connect', () => {
 });
 
 gulp.task('open', ['connect'], () => {
-  gulp.src('www/*.html')
+  gulp.src('./index.html')
     .pipe(open({ uri: config.devBaseUrl + ':' + config.port + '/'}));
 });
 
 gulp.task('html', () => {
-  gulp.src(config.paths.html)
+  return gulp.src(config.paths.html+'.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(config.paths.dist))
     .pipe(connect.reload())
     .pipe(notify('HTML OK!'));
